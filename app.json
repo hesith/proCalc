@@ -19,7 +19,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.hesith.proCalc"
     },
     "web": {
       "bundler": "metro",
@@ -27,10 +28,32 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/Technology.ttf",
+            "./assets/fonts/Technology-Italic.ttf",
+            "./assets/fonts/RetroGastrollRegular-ywvn3.ttf",
+            "./assets/fonts/CafeDeParisSans-BWwJx.ttf"
+          ]
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "androidNavigationBar": {
+      "visible": "immersive"
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "cba47501-42cf-4d23-99c3-2c236e732b8c"
+      }
     }
   }
 }
