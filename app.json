@@ -45,7 +45,7 @@
       "typedRoutes": true
     },
     "androidNavigationBar": {
-      "visible": "immersive"
+      "visible": "sticky-immersive"
     },
     "extra": {
       "router": {
