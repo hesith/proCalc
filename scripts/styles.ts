@@ -19,7 +19,7 @@ export const styles = StyleSheet.create({
         color: 'black'
     },
     letterTxt:{
-        fontSize: 40,
+        fontSize: 30,
         fontFamily: 'CafeDeParisSans-BWwJx',
         color: 'white'
     },
@@ -29,7 +29,7 @@ export const styles = StyleSheet.create({
         width: '22%'
     },
     operatorTxt:{
-        fontSize: 40,
+        fontSize: 30,
         fontFamily: 'CafeDeParisSans-BWwJx',
         color: 'white'
     },

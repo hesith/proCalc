@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "proCalc",
+    "name": "Retro Calculator",
     "slug": "proCalc",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -20,7 +20,8 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.hesith.proCalc"
+      "package": "com.hesith.retroCalc",
+      "versionCode": 3
     },
     "web": {
       "bundler": "metro",

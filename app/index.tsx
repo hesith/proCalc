@@ -121,9 +121,16 @@ export default function Index() {
       if( number!=null )
       {  
         value = number;
-        
         if(displayVal==0){
-          setDisplayVal(value)
+
+          if((displayVal.toString()).endsWith("."))
+          {
+            setDisplayVal(displayVal.toString().concat(value.toString()));
+          }else
+          {
+            setDisplayVal(value);
+          }
+
           return;
         }else{
           if(isOperatorClicked==true)
@@ -142,7 +149,7 @@ export default function Index() {
       else if(isDot==true)
       {
         if(isFrac==false){
-          value = '.'
+          value = '.';
           setDisplayVal(displayVal.toString().concat(value.toString()))
           setIsFrac(true);
         } 
@@ -163,7 +170,7 @@ export default function Index() {
             {
               setIsOperatorClicked(true);
               setIsFrac(false);
-              calculate(operator);
+              calculate(lastOperator);
               setLastOperator(operator);
             }
             
@@ -262,6 +269,7 @@ export default function Index() {
 
   function calculate(lastOperator: any)
   {
+
     switch (lastOperator){
       case 'ADD':
         var x = (parseFloat(valueBeneath))
